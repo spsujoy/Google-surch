@@ -1,0 +1,78 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'varela Round', sans-serif;
+}
+
+.hero{
+	width: 100%;
+	height: 100vh;
+	background: #f0f3ff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#searchBox{
+	border-radius: 55px;
+	padding: 30px;
+	background: #f0f3ff;
+	display: flex;
+	align-items: center;
+	box-shadow: 6px 6px 10px -1px rgb(0, 0, 0,0.15),
+	            -6px -6px 10px -1px rgb(255,255,255,0.7);
+}
+
+#googleIcon{
+	width:50px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+#googleIcon:hover{
+	transform: scale(1.3)
+}
+.searchicon{
+	width: 0px;
+	transition: 0.5s;
+	transition-delay: 0.1s;
+	outline: none;
+}
+.searchicon:hover{
+	transform: rotate(360deg);
+	cursor: pointer;
+}
+input{
+	font-size: 20px;
+	width: 0px;
+	border: 0;
+	background: transparent;
+	outline: none;
+	transition: 1.0s;
+}
+#audios{
+	width: 0px;
+	transition: 0.5s;
+	transition-delay: 0.6s; 
+}
+.active input{
+	width: 500px;
+	padding: 12px 20px;
+}
+.active .searchicon{
+	width: 30px;
+    margin-right: 19px;
+    background: linear-gradient(
+45deg
+, #ff9800, #fbe801);
+    border-radius: 53px;
+    padding: 10px;
+}
+.active #audios{
+	width: 300px;
+}
+.searchbtn{
+	margin-top: 50px;
+}
+
+
+
+

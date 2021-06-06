@@ -1,0 +1,42 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Google</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="icon" href="img/google1.png" type="image/icon">
+</head>
+<body>
+	
+	<div class="hero">
+		<div id="searchBox">
+			<img src="img/google1.png" id="googleIcon" >
+			
+			<input type="text" placeholder="Search on google or type URL" class="surchbox" value="">
+			<img src="img/search.png" class="searchicon"> 
+			
+		</div>
+	</div>
+	
+
+	<script>
+		
+		var searchBox = document.getElementById('searchBox');
+		var googleIcon = document.getElementById('googleIcon');
+		googleIcon.onclick = function(){
+			searchBox.classList.toggle('active')
+		}
+		let surchbox = document.querySelector('.surchbox')
+		let searchicon = document.querySelector('.searchicon')
+
+		searchicon.onclick = function(){
+			let url = 'https://www.google.com/search?q='+surchbox.value;
+			window.open(url);
+		}
+		
+
+	</script>
+
+</body>
+</html>
